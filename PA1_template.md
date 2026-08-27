@@ -8,7 +8,8 @@ output:
 
 ## Loading and preprocessing the data
 
-```{r, results='hide', warning=FALSE, message=FALSE,echo=TRUE}
+
+``` r
 library(tidyverse)
 # Extracting file names inside the Zip file
 unzip("repdata_data_activity.zip", list = TRUE)$Name
@@ -23,11 +24,17 @@ activities
 
 ## What is mean total number of steps taken per day?
 
-```{r}
+
+``` r
 mean_total_step<- activities %>% 
         summarise(avg_total_step= mean(steps, na.rm= T))
 
 mean_total_step
+```
+
+```
+##   avg_total_step
+## 1        37.3826
 ```
 
 
