@@ -63,15 +63,17 @@ p<- ggplot(activity_pattern, aes(interval, mean_steps))+
         labs(title="Average Daily Activity Pattern",
               x= "5-Minute Interval",
               y= "Average Number of Steps")
-     
-
 library(plotly)
+
 ggplotly(p) %>% 
         layout(
         title = "Average Daily Activity Pattern",
         xaxis = list(title = "5-Minute Interval"),
         yaxis = list(title = "Average Number of Steps")
     )
+     
+
+
 ```
 
 
