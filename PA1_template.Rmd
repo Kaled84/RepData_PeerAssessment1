@@ -8,7 +8,7 @@ output:
 
 ## Loading and preprocessing the data
 
-```{r, echo=TRUE, include=FALSE}
+```{r, echo=TRUE, message=FALSE,warning=FALSE, results='hide'}
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
@@ -194,10 +194,7 @@ xyplot(mean_steps ~ interval | day_type,
        ylab = "Number of Steps",
        main = "Average Activity Pattern: Weekdays vs Weekends")
 ```
-## Creating PA1_template.md file
-```{r}
-knitr::knit("PA1_template.Rmd")
-```
+
 
 
 
